@@ -24,32 +24,32 @@
 
 
 **가설 검증 방향**:<br>
-1. 연간 범죄율 계산
-- 인구 10만 명당 범죄 발생률 연 평균을 구해 범죄 발생 예측 정책 필요성 피력
- - 형법 범죄율은 인구 10만 명당 형법 범죄 발생건수를 나타낸다.
+1. 연간 범죄율 계산<br>
+- 인구 10만 명당 범죄 발생률 연 평균을 구해 범죄 발생 예측 정책 필요성 피력<br>
+ - 형법 범죄율은 인구 10만 명당 형법 범죄 발생건수를 나타낸다.<br>
  - 형법 범죄율 계산 방식 = (형법 범죄 발생건수 ÷ 총인구) × 100,000<br>
- - 1979년부터 2018년까지 형법 범죄율 증가추이를 살펴본다.
- - 근 10년 간 형법 범죄 발생률 감소 여부를 확인한다.
+ - 1979년부터 2018년까지 형법 범죄율 증가추이를 살펴본다.<br>
+ - 근 10년 간 형법 범죄 발생률 감소 여부를 확인한다.<br>
  <br> 
-2. 인구 수와 범죄 발생 간 상관관계 파악
-- scatter plot(산점도) 및 피어슨 상관계수 적용
- - violent crime의 경우
+2. 인구 수와 범죄 발생 간 상관관계 파악<br>
+- scatter plot(산점도) 및 피어슨 상관계수 적용<br>
+ - violent crime의 경우<br>
  - property crime의 경우<br>
  <br>
 
-3. 인구 수에 따른 범죄 발생률 인과관계 여부 분석
-- 회귀분석(regression)
- - statsmodel의 ols 적용
-  - 변수의 정규성: KDE(Kernel Density Estimation)
-  - 변수의 선형 상관성: regplot  
-  - 변수의 독립성: DW 검정(Durbin-Watson)
+3. 인구 수에 따른 범죄 발생률 인과관계 여부 분석<br>
+- 회귀분석(regression)<br>
+ - statsmodel의 ols 적용<br>
+  - 변수의 정규성: KDE(Kernel Density Estimation)<br>
+  - 변수의 선형 상관성: regplot<br>  
+  - 변수의 독립성: DW 검정(Durbin-Watson)<br>
 - 인구 수에 가장 큰 영향을 받는 형법 범죄 확인<br>
 <br>
-4. 2019년 인구 수를 통한 형법 범죄 발생 건수 예측
-- 최적의 모델 구현
-  - sklearn의 LinearRegression 적용
-  - sklearn의 DecisionTreeRegressor, RandomForestRegressor 적용
-  - sklearn의 GradientBoostingRegressor 적용
-  - 모델 예측 정확도 목표 = 90 이상
+4. 2019년 인구 수를 통한 형법 범죄 발생 건수 예측<br>
+- 최적의 모델 구현<br>
+  - sklearn의 LinearRegression 적용<br>
+  - sklearn의 DecisionTreeRegressor, RandomForestRegressor 적용<br>
+  - sklearn의 GradientBoostingRegressor 적용<br>
+  - 모델 예측 정확도 목표 = 90 이상<br>
  <br>
 5. 정리<br>
